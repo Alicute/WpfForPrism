@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAForPrism", "WpfAForPrism\WpfAForPrism.csproj", "{3A850661-9834-4255-8E7A-20372E15DAAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleA", "ModuleA\ModuleA.csproj", "{88E7C3C3-42CB-4009-B9BD-5E46647D76F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleB", "ModuleB\ModuleB.csproj", "{BC25D33F-CC7D-452D-818D-A44F6E77A4CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A850661-9834-4255-8E7A-20372E15DAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A850661-9834-4255-8E7A-20372E15DAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A850661-9834-4255-8E7A-20372E15DAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A850661-9834-4255-8E7A-20372E15DAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E7C3C3-42CB-4009-B9BD-5E46647D76F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E7C3C3-42CB-4009-B9BD-5E46647D76F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E7C3C3-42CB-4009-B9BD-5E46647D76F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E7C3C3-42CB-4009-B9BD-5E46647D76F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC25D33F-CC7D-452D-818D-A44F6E77A4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC25D33F-CC7D-452D-818D-A44F6E77A4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC25D33F-CC7D-452D-818D-A44F6E77A4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC25D33F-CC7D-452D-818D-A44F6E77A4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33D8DDD4-31AC-4B09-AF70-F7B9FF2FA876}
+	EndGlobalSection
+EndGlobal
