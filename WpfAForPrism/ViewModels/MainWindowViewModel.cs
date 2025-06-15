@@ -15,17 +15,19 @@ namespace WpfAForPrism.ViewModels
      public class MainWindowViewModel : BindableBase
     {
 
+
+        private readonly  IRegionManager RegionManager;
         private RegionNavigationJournal Journal;
         public DelegateCommand<string> ShowContentCmm { get; set; }
         public DelegateCommand BackCmm { get; set; }
 
-        private readonly  IRegionManager RegionManager;
-
 
         public MainWindowViewModel(IRegionManager _RegionManager)
         {
+
+             RegionManager = _RegionManager;
             ShowContentCmm = new DelegateCommand<string>(ShowcContentFunc);
-            RegionManager = _RegionManager;
+           
             BackCmm = new DelegateCommand(Back);
         }
         private void Back() {

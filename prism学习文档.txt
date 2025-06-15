@@ -1,0 +1,44 @@
+Prism学习
+
+区域、模块化、导航、对话服务、发布订阅
+
+
+1、区域：
+学习区域的时候，只有主项目这一个项目，然后项目结构如下：
+
+   WpfAForPrism（主项目）
+   ├── Views
+   │   └── MainWindow.xaml
+   │       └── <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+   └── ViewModels
+       └── MainWindowViewModel.cs
+           └── 使用 IRegionManager 进行导航
+
+其实最开始的时候，MainWindow.xaml是在根目录下的，后来因为使用ViewModels目录内创建了视图模型，然后要使用的时候，无法对应起来，就创建了View目录，并在MainWindow.xaml文件里面使用了视图模型定位器这个知识点：
+
+   <Window x:Class="WpfAForPrism.Views.MainWindow"
+           xmlns:prism="http://prismlibrary.com/"
+           prism:ViewModelLocator.AutoWireViewModel="True">
+
+它的作用是：
+自动将视图和视图模型关联
+自动创建视图模型实例
+自动注入依赖
+遵循 MVVM 模式
+
+所以考虑使用MVVM模式，先在主项目下创建了3个用户控件，然后去App.xaml.cs里面注册视图，注册视图到依赖注入容器里面，方便后面的视图模型使用。
+   protected override void RegisterTypes(IContainerRegistry containerRegistry)
+   {
+       // 注册视图
+       containerRegistry.RegisterForNavigation<UCA>();
+       containerRegistry.RegisterForNavigation<UCB>();
+       containerRegistry.RegisterForNavigation<UCC>();
+   }
+
+
+然后去ViewModels的MainWindowViewModel.cs里面实现对应的代码。区域管理、命令对象定义、构造函数实例化、命令的具体逻辑，最后在xaml文件中，在对应的按钮上绑定对应的方法，只需要根据按钮对应需要的参数进行传参即可实现了。如此就实现了解耦
+
+
+
+
+
