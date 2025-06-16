@@ -9,7 +9,7 @@ using Prism.Regions;
 
 namespace ModuleA.ViewModels
 {
-    class ViewAViewModel : BindableBase,IConfirmNavigationRequest
+    public class ViewAViewModel : BindableBase,IConfirmNavigationRequest  //IConfirmNavigationRequest 继承了INavigationAware 所以可以重写ConfirmNavigationRequest方法
     {
 		/// <summary>
 		/// 绑定的内容
