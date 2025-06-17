@@ -34,6 +34,12 @@
                 Height="30"
                 Command="{Binding BackCmm}"
                 Content="后退" />
+            <Button
+                Width="80"
+                Height="30"
+                Command="{Binding ShowDialogCmm}"
+                CommandParameter="ViewC"
+                Content="打开对话框" />
         </StackPanel>
         <ContentControl Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" />
     </Grid>

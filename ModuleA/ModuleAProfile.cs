@@ -20,6 +20,7 @@ namespace ModuleA
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<ViewA, ViewAViewModel>();
+            containerRegistry.RegisterDialog<ViewC,ViewCViewModel>();
         }
     }
 }

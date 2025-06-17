@@ -17,6 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ModuleA\ModuleA.csproj" />
+    <ProjectReference Include="..\ModuleB\ModuleB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Modules\ModuleA.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
