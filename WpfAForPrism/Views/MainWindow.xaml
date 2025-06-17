@@ -13,8 +13,8 @@
     mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30" />
-            <RowDefinition />
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
             <Button
@@ -22,25 +22,41 @@
                 Height="30"
                 Command="{Binding ShowContentCmm}"
                 CommandParameter="ViewA"
-                Content="模块A" />
+                Content="模块A"/>
             <Button
                 Width="80"
                 Height="30"
                 Command="{Binding ShowContentCmm}"
                 CommandParameter="ViewB"
-                Content="模块B" />
+                Content="模块B"/>
             <Button
                 Width="80"
                 Height="30"
                 Command="{Binding BackCmm}"
-                Content="后退" />
+                Content="后退"/>
             <Button
                 Width="80"
                 Height="30"
                 Command="{Binding ShowDialogCmm}"
                 CommandParameter="ViewC"
-                Content="打开对话框" />
+                Content="打开对话框"/>
+            <Button
+                Width="80"
+                Height="30"
+                Click="BtnPubClick"
+                Content="发布事件"/>
+            <Button
+                Width="80"
+                Height="30"
+                Click="BtnSubClick"
+                Content="订阅事件"/>
+            <Button
+                Width="80"
+                Height="30"
+                Click="BtnUnSubClick"
+                Content="取消订阅"/>
         </StackPanel>
-        <ContentControl Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" />
+        <ContentControl Grid.Row="1"
+                        prism:RegionManager.RegionName="ContentRegion"/>
     </Grid>
 </Window>
